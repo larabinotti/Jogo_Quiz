@@ -1,0 +1,98 @@
+:root {
+    --primary-brand-color: #ED145B;
+    --secondary-brand-color: #0762C8;
+    --new-black: #212427;
+    --new-white: #E8E8E8;
+    --card-bg: #f7f7f7;
+}
+
+body {
+    color: var(--new-black);
+    background: linear-gradient(135deg, #e8e8e8, #dfeeff);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.flex-colunar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.border-primary,
+.border-secondary {
+    background-color: var(--card-bg);
+    border-radius: 14px;
+    box-shadow: 0 8px 18px rgba(33, 36, 39, 0.18);
+}
+
+
+.border-primary {
+    border: 3px solid var(--primary-brand-color);
+    width: 300px;
+}
+
+
+.border-secondary {
+    border: 3px solid var(--secondary-brand-color);
+    width: 420px;
+}
+
+
+.padding-8 {
+    padding: 18px;
+}
+
+
+.text-bold {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+button {
+    font-family: monospace;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 6px;
+    cursor: pointer;
+    background-color: var(--secondary-brand-color);
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    background-color: #054c9c;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    color: #888888;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+input[type="radio"] {
+    accent-color: var(--primary-brand-color);
+    cursor: pointer;
+}
+
+
+label {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.width-fit-content {
+    width: fit-content;
+}
